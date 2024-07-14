@@ -5,7 +5,7 @@ Practice 放的是我寫的課堂作業以外的一些程式，主要可以分�
 - 簡單的小遊戲
 
 ## 蒙地卡羅模擬
-[ArknightsRaffle.cpp](https://github.com/Guan-Yu-Chen/Practice/blob/main/ArknightsRaffle.cpp)模擬了手遊 Arknights 的抽獎機制，會寫這段程式是因為它的抽獎機制和其他遊戲不太一樣。
+[ArknightsRaffle.cpp](https://github.com/Guan-Yu-Chen/Practice/blob/main/MonteCarloSimulation/ArknightsRaffle.cpp)模擬了手遊 Arknights 的抽獎機制，會寫這段程式是因為它的抽獎機制和其他遊戲不太一樣。
 
 抽獎機制如下:  
 遊戲裡最大獎是六星角色，獲得機率是2%。如果連續50次沒有獲得六星角色，則下一次獲得機率從2%提升至4%，如果該次還沒有獲得六星角色，則下一次獲得機率從4%提升至6%。依此類推，直到100%時必定獲得六星角色。  
