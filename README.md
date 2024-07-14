@@ -1,8 +1,8 @@
 # Practice
 Practice 放的是我寫的課堂作業以外的一些程式，主要可以分成三個種類
 - 蒙地卡羅模擬
-- 簡單的小遊戲
 - 題目練習
+- 簡單的小遊戲
 
 ## 蒙地卡羅模擬
 [ArknightsRaffle.cpp](https://github.com/Guan-Yu-Chen/Practice/blob/main/ArknightsRaffle.cpp)模擬了手遊 Arknights 的抽獎機制，會寫這段程式是因為它的抽獎機制和其他遊戲不太一樣。
@@ -14,5 +14,7 @@ Practice 放的是我寫的課堂作業以外的一些程式，主要可以分�
 
 以下是模擬了100萬次抽獎的結果，期望值是大約是 34.59抽，根據網路上其他人實際計算後的正確期望值是 34.6抽，可以看出模擬的結果和實際數值只有非常小的誤差。
 
-<img src="https://i.imgur.com/IEOmzqq.png" width="100%">
+<img src="https://i.imgur.com/IEOmzqq.png" width="100%">  
+  
+## 題目練習
 
