@@ -1,10 +1,8 @@
 #include <iostream>
 #include <vector>
-#include <chrono>
 #include <ctime>
 
 using namespace std;
-using namespace std::chrono;
 
 int main() {
     system("chcp 65001");
