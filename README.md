@@ -55,12 +55,20 @@ Practice 放的是我寫的課堂作業以外的一些 C++ 程式，主要可以
 
 ### Bulls and Cows ( 1A2B )
 1A2B 是計算機概論這堂課的final project，是分組完成的作業。  
-而[bullsandcows.cpp](https://github.com/Guan-Yu-Chen/Practice/blob/main/Game/BullsAndCows.cpp) 是project完成後，我再自己修改部分細節後的程式。例如 `int power_10(int)` 這個function，它的作用其實就是 `<cmath>` 裡的 `pow()` 函式，但我在測試的時候發現，應該是VSCode編譯器的問題，在計算10的次方時會出現例如9999的數字，造成程式出錯，所以我另外寫了這個函式來代替它。  
+而[BullsAndCows.cpp](https://github.com/Guan-Yu-Chen/Practice/blob/main/Game/BullsAndCows.cpp) 是project完成後，我再自己修改部分細節後的程式。例如 `int power_10(int)` 這個function，它的作用其實就是 `<cmath>` 裡的 `pow()` 函式，但我在測試的時候發現，應該是VSCode編譯器的問題，在計算10的次方時會出現例如9999的數字，造成程式出錯，所以我另外寫了這個函式來代替它。  
 
 在寫這個遊戲的時候，我遇到比較大的問題是排版。我認為就算是文字類型的遊戲，視覺感受也是遊戲中重要的一部分，所以我希望可以讓終端機不只是單純輸出內容，而是可以刪除輸出過的字，把多餘的字刪掉，維持視窗的美觀。
 後來我找到的方法是使用 `"/033"` 的方式 ，也就是 ANSI Escape Codes，只是我當時在寫的時候還沒有了解這麼多，所以我自己又寫了別的函式來達到我想要的效果
 
 像是 `MoveCursor()` 可以使用 `"\033[{line};{column}H"`來完成，或是 `DeleteOutput()` 可以透過 `"\033[1K"` 來實現，但當時在寫的時候不知道可以這麼做，現在回過頭來看，的確有很多地方可以改進。
+
+<img src="https://imgur.com/l2tkRwl.png" width="70%">  
+
+<img src="https://imgur.com/urmyBvQ.png" width="70%">  
+
+### 五子棋
+
+
 
 
 
