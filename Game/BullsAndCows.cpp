@@ -6,7 +6,7 @@
 using namespace std;
 using namespace std::chrono;
 
-void Menu(int &Players, bool &isItemMode, int &Digits);
+void Menu(int &Players, int &Digits);
 int power_10(int);
 void MoveCursor(int, int);
 void DeleteOutput(int);
@@ -14,12 +14,10 @@ void DeleteOutput(int);
 int main()
 {
     int Players = 1;
-    bool isTimeMode = 0;
     int Digits = 1;
     int PlayerInput = 0;
     
-
-    Menu(Players, isTimeMode, Digits);
+    Menu(Players, Digits);
 
     vector<vector<int>> CorrectAnswer(Players, vector<int>(Digits));            //玩家的正確答案 
     vector<vector<bool>> DigitsUsed(Players, vector<bool>(10));                 //玩家猜的數字用過了沒
@@ -189,7 +187,7 @@ int power_10(int x)
    return a;
 }   
 
-void Menu(int &Players, bool &isItemMode, int &Digits)
+void Menu(int &Players, int &Digits)
 {
     system("chcp 65001");
     cout << "\033[1A   >>>  Welcome to 1A2B !  <<<\n\n\n";
@@ -206,18 +204,6 @@ void Menu(int &Players, bool &isItemMode, int &Digits)
         {   cout << "太多人了!    \n          \n";    }
     }
     while (Players < 1 || Players > 8);
-    
-    do
-    {   
-        cout << "是否開啟道具功能:\n";
-        cout << "0 : 否      \n";
-        cout << "1 : 是      \033[2A\033[5C";
-        cin >> temp;
-        if(!(temp == 0 || temp == 1))
-        {   cout << "輸入錯誤! 請重新輸入!\n            \n";    }
-    }
-    while (!(temp == 0 || temp == 1));
-    isItemMode = temp;
 
     do
     {
@@ -235,11 +221,6 @@ void Menu(int &Players, bool &isItemMode, int &Digits)
     cout << "           \n";
     cout << "           \n";
     cout << "玩家人數 : " << Players << "人\n";
-    cout << "道具功能 : ";
-    if (isItemMode)
-    {   cout << "開啟\n";   }
-    else
-    {   cout << "關閉\n";   }
     cout << "答案位數 : " << Digits << "位\n\n";
     cout << "輸入任意數字開始遊戲:";
     cin >> temp;
