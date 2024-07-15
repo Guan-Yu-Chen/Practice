@@ -2,7 +2,7 @@
 #include <ctime>
 using namespace std;
 
-const int ROW = 2;
+const int ROW = 7;
 const int COLUMN = ROW + 1;
 
 void setMatrix(double m[ROW][COLUMN])
