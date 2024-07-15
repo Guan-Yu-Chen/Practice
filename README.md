@@ -18,3 +18,17 @@ Practice 放的是我寫的課堂作業以外的一些 C++ 程式，主要可以
   
 ## 題目練習
 
+[Examination](https://github.com/Guan-Yu-Chen/Practice/tree/main/Examination)裡面的程式題目來自於機械系的朋友跟我分享他們系上計算機概論的段考題，每一道題分別代表每次考試裡面他們認為最有趣或最難的題目，我出於好奇心就也寫了我的解法和他們一起討論。  
+
+### 泰勒展開式
+這道題目要我們使用泰勒展開式去計算 cos(x) 的逼近值，直到誤差小於 10e-6 ，並寫出到第幾項誤差值才會小於 10e-6  
+
+<img src="https://images.collegedunia.com/public/image/86d48527578c0232c74fb4facf8778d0.png" width="40%">  
+
+我認為比較有問題的點在於微分和階乘的部分。微分的話，要知道`cos > -sin > -cos > sin > …` 的規律。另一個是階乘，資料型態要使用`long`或`long long` 否則在算到13!以上就會溢位，這兩個點都解決的話程式基本上就沒問題了
+
+<img src="https://i.imgur.com/W5V7U4k.png" width="50%">  
+
+### 高斯消去法
+生成一個 7×8 的增廣矩陣，並隨機填入-9 ~ 9 的整數進去，接著算出每個方程式的解  
+
